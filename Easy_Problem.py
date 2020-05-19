@@ -178,3 +178,10 @@ def  problem17(x) :
         for j in range (2,x+1) :
             print(j*i,end=" ")
         print("")
+        
+def problem19 (x) :
+    sum = []
+    for i in x.split(" "):
+        sum.append(int(i))
+    print(min(sum),max(sum))
+
