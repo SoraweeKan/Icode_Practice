@@ -205,4 +205,15 @@ def problem21 (x):
     print(str(hour).zfill(2),
           str(min).zfill(2),
           str(second).zfill(2))
+    
+def problem23 (x):
+    sum = 0
+    ans = "Yes"
+    lnum = ["0","a","2","3","4","5","6","7","8","9","j","q","k"]
+    
+    for i in x :
+        sum += lnum.index(i.lower())
+
+    if sum >= 21 : ans = "No"
+    print(ans)
 
