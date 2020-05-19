@@ -171,3 +171,10 @@ def problem16 (x) :
         
     sum = (psyco * 1000) + (zaku * 300)
     print(sum)
+    
+def  problem17(x) :
+    for i in range (1,x+1) :
+        print(i,end=" ")
+        for j in range (2,x+1) :
+            print(j*i,end=" ")
+        print("")
