@@ -216,4 +216,13 @@ def problem23 (x):
 
     if sum >= 21 : ans = "No"
     print(ans)
-
+    
+def problem24(x):
+    import string
+    sum = 0
+    alphabet = list(string.ascii_lowercase)
+    
+    for i in x :
+        sum += alphabet.index(i)+1
+        
+    print(sum/len(x))   
