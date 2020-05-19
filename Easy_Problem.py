@@ -137,3 +137,26 @@ def problem13 (x):
     y = x.split("-")
     z = datetime.datetime(2020,int(y[1]),int(y[0]))
     print(z.strftime("%A"))
+    
+def problem14 (x1,x2) :
+    time = []
+    dis = 0
+    sum = 0
+
+    for i in x1.split(":") :
+        time.append(int(i))
+    for i in x2.split(":") :
+        time.append(int(i))
+
+    if time[0] > 12 :
+        time[0] -= 12
+    dis = (12 - time[0]) + time[2]
+    sum = (dis - 1) * 5
+    time[3] = time[3] - sum
+
+    while time[3] < 0 :
+        time[3] += 60
+        time[2] -= 1
+    
+    print(str(time[2]).zfill(2),end = ":",)
+    print(str(time[3]).zfill(2))
