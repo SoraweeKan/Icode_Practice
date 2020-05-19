@@ -226,3 +226,20 @@ def problem24(x):
         sum += alphabet.index(i)+1
         
     print(sum/len(x))   
+
+def problem25 (x) :
+    direct = ["S","E","N","W"]
+    position = 0
+    
+    for i in x :
+        if i == "L" :
+            position -= 1
+        if i == "R" :
+            position += 1
+        if i == "B" :
+            position += 2
+            
+    while position >= 5 : position -= 4
+    while position <= -5 : position += 4
+    
+    print(direct[position])
