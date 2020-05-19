@@ -184,4 +184,17 @@ def problem19 (x) :
     for i in x.split(" "):
         sum.append(int(i))
     print(min(sum),max(sum))
+    
+def problem20 (x) :
+    count = []
+    maximum = 0
+    for i in x.upper() :
+        if i not in count :
+            count.append(i)
+            count.append(1)
+        if i in count :
+            k = count.index(i)
+            count[k+1] = count[k+1]+1
+    for i in range (0,len(count),+2) :
+        print(count[i],count[i-1])
 
