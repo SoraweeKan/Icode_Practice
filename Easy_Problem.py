@@ -160,3 +160,14 @@ def problem14 (x1,x2) :
     
     print(str(time[2]).zfill(2),end = ":",)
     print(str(time[3]).zfill(2))
+    
+def problem16 (x) :
+    zaku = x // 1
+    x = x - (zaku * 1)
+    
+    while zaku > 50 :
+        zaku -= 9
+        psyco += 1
+        
+    sum = (psyco * 1000) + (zaku * 300)
+    print(sum)
