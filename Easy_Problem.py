@@ -197,4 +197,12 @@ def problem20 (x) :
             count[k+1] = count[k+1]+1
     for i in range (0,len(count),+2) :
         print(count[i],count[i-1])
+        
+def problem21 (x):
+    hour = x//3600 ; x -= hour * 3600
+    min = x//60 ; x -= min * 60
+    second = x
+    print(str(hour).zfill(2),
+          str(min).zfill(2),
+          str(second).zfill(2))
 
