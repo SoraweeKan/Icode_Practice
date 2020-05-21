@@ -252,3 +252,13 @@ def problem29(x):
         if count < len(x.split()) :
             print(count,end="")
         count += 1
+
+def problem32 (x) :
+    for i in range(1,x+1) :
+        if i % 3 == 0 and i % 15 != 0:
+            print("x", )
+        elif i % 5 == 0 and i % 15 != 0:
+            print("y", )
+        elif i % 15 == 0 :
+            print("z", )
+        else : print(i)        
