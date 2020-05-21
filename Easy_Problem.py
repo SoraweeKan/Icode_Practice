@@ -285,7 +285,10 @@ def problem34 (x) :
 
 def problem36 (x):
     num = ["0","1","2","3","3","4","5","6","7","8","9"]
+    sum = 0
     for i in x :
-        if i == num.index() :
+        if i in num :
             print(int(i))
+            sum += int(i)
+
     
