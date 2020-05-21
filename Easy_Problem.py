@@ -262,3 +262,14 @@ def problem32 (x) :
         elif i % 15 == 0 :
             print("z", end=" ")
         else : print(i, end=" ")    
+            
+def problem33(x1,x2) :
+    count = 0
+    day = x1
+    for i in range(6, 31+1):
+        if day == 7 or day == 1 :
+            count += 1
+        if day == 7 :
+            day = 0
+        day += 1
+    print(count)
