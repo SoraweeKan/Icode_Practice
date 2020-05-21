@@ -273,3 +273,19 @@ def problem33(x1,x2) :
             day = 0
         day += 1
     print(count)
+    
+def problem34 (x) :
+    j = 2
+    while x > 1 :
+        if x % j == 0 :
+            x = x // j
+            print(j)
+            j = 1
+        j += 1
+
+def problem36 (x):
+    num = ["0","1","2","3","3","4","5","6","7","8","9"]
+    for i in x :
+        if i == num.index() :
+            print(int(i))
+    
