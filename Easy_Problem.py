@@ -243,3 +243,12 @@ def problem25 (x) :
     while position <= -5 : position += 4
     
     print(direct[position])
+   
+def problem29(x):
+    count = 1
+    
+    for i in x.split():
+        print(i,end="")
+        if count < len(x.split()) :
+            print(count,end="")
+        count += 1
